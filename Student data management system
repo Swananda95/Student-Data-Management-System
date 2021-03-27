@@ -1,0 +1,36 @@
+student_1 = {
+    "Maths" : 45,
+    "Social" : 75,
+    "Science" : 96,
+    "name" : "Tanmay"
+}
+
+student_2 = {
+    "Maths" : 74,
+    "Social" : 83,
+    "Science" : 100,
+    "name" : "Dheeraj"
+}
+
+student_3 = {
+    "Maths" : 98,
+    "Social" : 62,
+    "Science" : 23,
+    "name" : "Sooraj"
+}
+
+student_list = [student_1,student_2,student_3]
+
+highest_score_in_maths = 0 
+highest_scoring_maths_name = ''
+for student in student_list:
+    if(student.get("Maths") > highest_score_in_maths):
+        highest_score_in_maths = student.get("Maths")
+        highest_scoring_maths_name = student.get('name')
+        
+print(f" The highest Scorer in Maths {highest_score_in_maths} by {highest_scoring_maths_name}")
+
+
+
+
+
